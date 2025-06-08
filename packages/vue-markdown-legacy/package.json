@@ -1,0 +1,60 @@
+{
+  "name": "vue-markdown-legacy",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "Vue component for rendering markdown with unified",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "unbuild",
+    "stub": "unbuild --stub",
+    "release": "pnpm build && pnpm publish --no-git-checks --access public"
+  },
+  "repository": "https://github.com/yuguaa/vue-markdown-legacy",
+  "bugs": {
+    "url": "https://github.com/yuguaa/vue-markdown-legacy/issues"
+  },
+  "keywords": [
+    "vue",
+    "markdown",
+    "unified",
+    "remark",
+    "rehype"
+  ],
+  "author": {
+    "name": "yuguaa",
+    "url": "https://github.com/yuguaa"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "devDependencies": {
+    "@types/hast": "^3.0.4",
+    "@types/unist": "^3.0.3",
+    "mdast-util-to-hast": "^13.2.0",
+    "unbuild": "^2.0.0"
+  },
+  "dependencies": {
+    "deepmerge": "^4.3.1",
+    "property-information": "^6.3.0",
+    "rehype-sanitize": "^6.0.0",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.1",
+    "unified": "^11.0.5"
+  },
+  "peerDependencies": {
+    "vue": "^2.7.16"
+  },
+  "files": [
+    "dist"
+  ]
+}

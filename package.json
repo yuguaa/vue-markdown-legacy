@@ -1,0 +1,44 @@
+{
+  "name": "vue-markdown",
+  "type": "module",
+  "version": "1.0.4",
+  "description": "Vue component for rendering markdown with unified",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "husky",
+    "lint": "eslint",
+    "build": "pnpm --filter vue-markdown-legacy build",
+    "postinstall": "pnpm -r run stub --if-present",
+    "stub": "pnpm --filter @crazydos/vue-markdown stub",
+    "dev": "pnpm --filter playground-legacy dev",
+    "release": "pnpm --filter vue-markdown-legacy release"
+  },
+  "repository": "https://github.com/shunnNet/vue-markdown",
+  "bugs": {
+    "url": "https://github.com/shunnNet/vue-markdown/issues"
+  },
+  "keywords": [
+    "vue",
+    "markdown",
+    "unified",
+    "remark",
+    "rehype"
+  ],
+  "author": {
+    "name": "shunnNet",
+    "url": "https://github.com/shunnNet"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.9.1",
+    "@stylistic/eslint-plugin": "^2.6.4",
+    "eslint-plugin-vue": "^9.27.0",
+    "husky": "^9.1.5",
+    "lint-staged": "^15.2.9",
+    "typescript": "^5.3.3",
+    "typescript-eslint": "^8.2.0"
+  },
+  "dependencies": {
+    "npm-run-all2": "^8.0.2"
+  }
+}
